@@ -2,7 +2,6 @@
   "name": "decjs",
   "version": "1.0.0",
   "description": "Expose node modules to browser",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

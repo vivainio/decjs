@@ -1,9 +1,11 @@
 var exec = require('child_process').execSync
 var fs = require('fs')
+var process = require('process')
 
 var package = fs.readFileSync("package.json")
 var parsed = JSON.parse(package)
 
+process.chdir('out');
 var deps = parsed.dependencies
 
 var res = ['window._cjs = {'];
@@ -21,7 +23,8 @@ console.log(res)
 fs.writeFileSync("cjs_gen_root.js", res.join("\n"));
 
 
+
 //console.log(json)
-//exec('browserify -o decjs_gen.js index.js')
+exec('browserify -o cjs_generated.js cjs_gen_root.js')
 
 
