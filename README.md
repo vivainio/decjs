@@ -25,7 +25,7 @@ Usage:
 - Check this project out from github
 - npm install -g browserify
 - Modify package.json to have your dependencies and run "npm i"
-- Run "node generate.py"
+- Run "node generate.js"
 - Include "out/cjs_generated.js" to your app
 
 Note that this is a lame experiment I whipped together quickly. I don't even use it myself for anything.
